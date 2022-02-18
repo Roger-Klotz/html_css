@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio/Mídias</title>
+</head>
+<body>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <h4>1ª Opção:</h4>
+    <!--Para adicionar áudio no site basta usar a tag "audio" e depois indicar o caminho da mídia em "src"-->
+    <!--A tag "controls" permite visualizar i controle de aúdio na página.-->
+    <!--A tag "autoplay" também permite reproduzir o áudio porém não está funcionando.-->
+    <audio src="midia/American Idle - RKVC.mp3" controls></audio>
+    <h4>2ª Opção:</h4>
+    <audio preload="metadata" autoplay controls loop>
+        <!--O parâmetro "preload" possui 3 opções "auto, metadata e none". o "none" não carrega nenhum arquivo. o "auto" carrega arquivo, mas ele só considera que o site terminou de carregar, depois que todo o arquivo de áudio for carregado efetivamente, portanto, dependendo do tamanho do áudio, a página demora muito pra carregar. O "metadata" carrega apenas alguns parâmetros é o mais indicado para a reproduyção de áudios em sites. -->
+        <!--Na ordem, primeiro o navegador vai tentar carregar o "mp3", se não conseguir, o próximo será o arquivo "ogg", e por último o arquivo "wav"-->
+        <!--"lopp" para o áudio ficar se repetindo depois do término.-->
+        <source src="midia/American Idle - RKVC.mp3" type="audio/mpeg">
+        <!--Supondo ter o suporte para a extensão de arquivo "ogg"-->
+        <source src="midia/American Idle - RKVC.ogg" type="audio/ogg">
+        <!--Supondo ter o suporte para a extensão de arquivo "wav"-->
+        <!--Arquivos do tipo "wav" são muito "pesados"-->
+        <source src="midia/American Idle - RKVC.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="midia/American Idle - RKVC.mp3">Clique aqui para baixar o arquivo</a></p>
+    </audio>
+</body>
+</html>

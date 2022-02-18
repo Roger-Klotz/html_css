@@ -1,0 +1,106 @@
+body{
+    width: 100%; /*largura do body*/
+    height: 100%; /*altura do body*/
+    margin: 0 auto; /*remove barra de rolagem horizontal*/
+}
+/*resetando lista de menu e sobrescrevendo a propriedade no navegador*/
+ul{
+    padding: 0px!important;
+}
+.menu-principal{
+    width: 100%;
+    background-color: #252323; /*cor preto em hexadecimal*/
+    height: 60px;
+}
+main{
+    margin: 0 auto;
+    width: 980px;
+    /*float: left; flutuar para a esquerda*/
+    position: relative; /*posição normal do elemento*/
+}
+
+/*configuração da logomarca WebWorld*/
+.logo{
+    padding: 16px;/*posição da logomarca*/
+    float: left; /*posição da logomarca em relação as redes sociais*/
+    width: 70%;/*ocupa 70% de 980px, redes sociais ocupa 20%*/
+}
+
+/*configuração da lista de ícones das redes sociais*/
+.redes-sociais ul li{
+    margin-left: 25px; /*espaço entre os ícones redes sociais*/
+    display: inline-block;/*alinhar os ícones das redes sociais e retirar as linhas de marcação*/ 
+    float: left;/*alinhamento dos ícones começa a esquerda*/
+}
+
+/*configuração do espaço da div redes sociais*/
+.redes-sociais{
+    width: 25%;
+    float: right;
+}
+
+/*configuração do cabeçalho de menus*/
+.header-2{
+    background-color: #ffffff;
+    width: 980px;
+    margin: 0 auto;/*centraliza horizontalmente o elemento no espaço*/
+    padding: 16px;
+}
+
+/*classe referente a borda inferior header-2*/
+.menu-urls{
+    height: 80px;
+    border-bottom: 3px solid #efefef;/* borda inferior cinza*/
+}
+
+.menu ul li{ /*editando menu header-2*/
+    display: inline-block;/* alinhar menu*/
+    color: #8b8b8b;
+    margin-left: 15px;
+    height: 50px;
+}
+
+.menu ul li:hover{ /*barra abaixo do link*/
+    border-bottom: 2px solid #00bac6;
+}
+
+.menu ul li a:hover{ /*pseudoclasse para estilizar qdo passamos o cursos do mouse por cima de algum elemento da página*/
+    color: #00bac6;
+}
+
+.menu ul li a{ /* editando menu header-2 e links*/
+    color: #8b8b8b;
+    text-decoration: none;/* remove o sublinhado das palavras*/
+    font-size: 18px;
+    text-transform: uppercase;/* transforma letras em maiusculas*/
+}
+.menu{
+    width: 70%; /*menu header-2 ocupa 70% de 980px*/
+    float: left;
+}
+
+/*Configuração da caixa de busca lado direito superior*/
+.busca{
+    text-align: center;/*centralizar box de busca*/
+    width: 30%;/*div busca ocupa 30% restantes dos 980px*/
+    float: right;
+}
+
+.busca input{
+    background-image: url(../img/icone-search.png);
+    background-repeat: no-repeat;
+    height: 36px;/*altura da box*/
+    margin-top: 10px;
+    padding: 12px;
+    width: 190px;
+    background-position: 96%;
+    border: 1px solid #d6d6d6;
+
+}
+
+/*Classe criada para configurar o main -> 100% do tamanho da tela (980px)*/
+.coluna-100{
+    width: 100%;
+    float: left;
+    position: relative;
+}

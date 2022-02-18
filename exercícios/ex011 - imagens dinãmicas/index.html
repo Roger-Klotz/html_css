@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas - Mídias em HTML5</title>
+</head>
+<body>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <!--A foto pequena carregará a largura máxima de 750px-->
+        <source media="(max-width:750px )" srcset="Imagens/foto-p.png" type="image/png">
+        <!--Ultrapassando 750px, a imagem média carragará até a largura máxima de 1050px-->
+        <source media="(max-width:1050px )" srcset="Imagens/foto-m.png" type="image/png">
+        <!--Ultrapassando 1050px, a imagem grande carregará-->
+        <img src="imagens/foto-g.png" alt="Imagem flaxível">
+    </picture>
+</body>
+</html>
