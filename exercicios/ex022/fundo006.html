@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes de imagem de fundo</title>
+    <style>
+        body{
+            background-color: black;
+            background-image: url(imagens/wallpaper002.jpg);
+
+            /*
+            Configuração de imagem 1: Encaixa a imagem total na tela, porém, há distorções na imagem em relação a altura.
+
+            height: 100vh;
+            background-position: center top;
+            background-repeat: repeat;
+            background-size: 100% 100%; - largura e altura
+            */
+
+            /*
+            Configuração de imagem 2: Usa 100% da imagem na tela, porém, há distorções quando a tela fica pequena, fundo preto.
+
+            height: 100vh;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: contain;
+            */
+
+            /*
+            Configuração de imagem 3: A imagem usa 100% da viewport, porém, não mostra todos os detalhes da imagem.
+            */
+
+            height: 100vh;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        main{
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eum impedit cumque, libero sit odio earum? Ullam officiis amet provident mollitia explicabo. Inventore voluptates vitae optio! Odit quod voluptates ex?</p>
+    </main>
+</body>
+</html>
