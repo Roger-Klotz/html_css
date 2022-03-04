@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de cadastro</title>
+    <link rel="stylesheet" href="estilostyle.css">
 </head>
 <body>
     <div>
@@ -13,6 +14,67 @@
         <br>
     </div>
 
-    <form action=""></form>
+    <form>
+        <fieldset>
+            <div>
+                <label>Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div>
+                <label>Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+        </fieldset>
+
+        <div>
+            <label>Email</label>
+            <input type="text" name="email" id="email">
+        </div>
+
+        <div>
+            <label>Qual tipo de automóvel você prefere?</label>
+            <label>
+                <input type="radio" name="cliente" value="hatch" checked>Hatch
+            </label>
+            <label>
+                <input type="radio" name="cliente" value="sedan">Sedan
+            </label>
+            <label>
+                <input type="radio" name="cliente" value="suv">SUV
+            </label>
+            <label>
+                <input type="radio" name="cliente" value="van">Van
+            </label>
+        </div>
+            <br>
+        <div>
+        <fieldset>
+            <div>
+                <label>Qual tipo de câmbio você prefere?</label>
+                <label>
+                    <input type="radio" name="cliente" value="manual">Manual
+                </label>
+                <label>
+                    <input type="radio" name="cliente" value="automático">Automático
+                </label>
+                <label>
+                    <input type="radio" name="cliente" value="CVT">CVT
+                </label>
+                <label>
+                    <input type="radio" name="cliente" value="automatizado">Automatizado
+                </label>
+            </div>
+        </fieldset>
+
+        <div>
+            <br>
+            <label>Conte um pouco sobre experiência com carros automáticos:</label>
+            <textarea name="experiencia" id="experiencia" cols="50" rows="6"></textarea>
+        </div>
+
+        <button type="submit">Concluído</button>
+        </div>
+    </form>
 </body>
 </html>
