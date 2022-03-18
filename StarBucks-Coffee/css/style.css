@@ -24,13 +24,17 @@ html,body{
     width: 60%;
 }
 
+.logo img{
+    margin-top: -17px;
+}
+
 header{
     height:150px;
     padding:20px 0;
 }
 
 .menu{
-    padding-top:30px;
+    padding-top:20px;
     width:30%;
     text-align: right;
 }
@@ -54,8 +58,8 @@ section.sobre{
     right:-350px;
     width: 950px;
     height:950px;
-    border-radius:50%;
-    background-image: url(../img/background.png);
+    /*border-radius:50%;*/
+    /*background-image: url(../img/background.png);*/
 }
 
 .corpo{
@@ -68,13 +72,13 @@ section.sobre{
 .social-media{
     position: absolute;
     right: 400px;
-    top:200px;
+    top:180px;
 }
 
 .social-media img{
     display: block;
-    width:40px;
-    margin-top: 10px;
+    width:50px;
+    margin-top: 5px;
 }
 
 
