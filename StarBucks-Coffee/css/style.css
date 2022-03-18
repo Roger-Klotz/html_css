@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin:0 auto;
+    padding:0 2%;
+}
+
+html,body{
+    background-image: url(../img/background.png);
+    height:100%;
+    overflow-y: hidden;
+    overflow-x:hidden;
+}
+
+.logo{
+    width: 60%;
+}
+
+header{
+    height:150px;
+    padding:20px 0;
+}
+
+.menu{
+    padding-top:30px;
+    width:30%;
+    text-align: right;
+}
+
+.menu a{
+    font-weight: bolder;
+    color: #020075;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+section.sobre{
+    height: calc(100% - 200px);
+    position: relative;
+}
+
+.extras{
+    position: absolute;
+    bottom:-350px;
+    right:-350px;
+    width: 950px;
+    height:950px;
+    border-radius:50%;
+    background-image: url(../img/background.png);
+}
+
+.corpo{
+    width: 700px;
+    height: 700px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.social-media{
+    position: absolute;
+    right: 400px;
+    top:200px;
+}
+
+.social-media img{
+    display: block;
+    width:40px;
+    margin-top: 10px;
+}
+
+
+.texto-sobre{
+    margin-top:100px;
+}
+
+.texto-sobre h1{
+    font-size: 50px;
+}
+
+.texto-sobre p{
+    margin:20px 0;
+    color:black;
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 800px;
+}
+
+.texto-sobre button{
+    border:0;
+    background-color: #00F0F8;
+    color:white;
+    border-radius:10px;
+    width:100px;
+    height:30px;
+    cursor: pointer;
+
+}
