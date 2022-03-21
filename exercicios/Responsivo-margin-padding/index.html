@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade com margin e padding</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent{
+            width: 50%;
+            height: 400px;
+            background-color: aqua;
+        }
+
+        .box{
+            /* - em % não é permitido trabalhar com números negativos
+                - especifica um preenchimento em % da largura do elemento pai*/
+            width: 50%;
+            padding-top: 25%;/*25% dos 50% da largura da class "parent"*/
+            background-color: blue;
+            margin-left: 50%;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
