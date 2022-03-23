@@ -194,9 +194,6 @@ html,body{
 
 .container-section{
 	margin-top:40px;
-}
-
-.container-section{
 	text-align: center;
 }
 
@@ -210,7 +207,7 @@ html,body{
 .container-single p{
 	display: inline-block;
 	text-align: justify;
-	padding:10px 25px;
+	padding: 10px;
 }
 
 .container-single img{
@@ -253,14 +250,14 @@ html,body{
 	}
 
 	.form{
-		margin-top: 30px;
+		/*margin-top: 30px;*/
 		max-width: 400px;
 		padding:10px;
-		width: 90%;
+		width: 60%;
 		height: 100%;
 		display: inline-block;
-		float: none;
-		position: relative;
+		float: right;
+		/*position: relative;*/
 		top: 0;
 		/*border-width: 12px;
 		border-color: rgba(120,120,120,0.5);
@@ -272,9 +269,10 @@ html,body{
 
 	.container-list{
 		padding:30px 0; 
-		margin-top: 0;
-		float: none;
-		width: 90%;
+		/*margin-top: 0;*/
+
+		float: left;
+		width: 40%;
 		display: inline-block;
 		max-width: 500px;
 		height: auto;
@@ -287,6 +285,42 @@ html,body{
 		height: 55px;
 		/*border:1px solid #ccc;*/
 	}
+
+	.form input[type=submit]{
+		max-width: 280px;
+		height: 56px;
+		width: 100%;
+	}
 	
+}
+
+@media screen and (max-width: 768px){
+
+	.container-2{
+		padding-right: 4%;
+		padding-left: 4%;
+	}
+
+	.container-list{
+		margin-top: 0;
+		float: none;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.form{
+		float: none;
+		display: inline-block;
+		width: 90%;
+		margin-top: 30px;
+	}
+
+	.container-single{
+		float: none;
+		display: inline-block;
+		width: 100%;
+		max-width: 600px;
+		padding:30px 0;
+	}
 	
 }
